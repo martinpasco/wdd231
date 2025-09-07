@@ -6,9 +6,11 @@
    <title>Document</title>
    <meta name="description" content="description of page using keyboards">
    <meta name="author" content="Martin A. Pasco">
-   <link rel="stylesheet" href="styles/normalize.css">
-   <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    
 </head>
 <body>
    <header>
@@ -30,7 +32,18 @@
         Dedicate Temples
     </h1>
    </main>
-   <footer>Martin A. Pasco | BYU-Idaho | wdd231 - 2025</footer>
-   <script src="scripts/navigation.js"></script>
+   <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/mpsand/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://github.com/martinpasco" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/martin-pasco/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://x.com/?&" target="_blank"><img src="images/twitter-x.svg" alt="" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="curYr"></span></p>
+            <script src="scripts/getdates.js" defer></script>
+        <p></p>
+        <p>This document was  last modified: <span id="demo"></span>
+   </footer>
+   
 </body>
 </html> 

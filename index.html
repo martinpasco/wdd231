@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/main.css">
     
 </head>
 <body>
@@ -20,18 +21,69 @@
    </header>
    <nav id="nav-bar" class="navigation">
         <ul>
-            <li ><a href="#">News & Events</a></li>
-            <li class="current"><a href="#">Dedicate Temples</a></li>
-            <li ><a href="#">Announced Temples</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li ><a href="#">Chamber Project</a></li>
+            <li ><a href="#">Final Project</a></li>
             
         </ul>
     
    </nav>
    <main>
     <h1>
-        Dedicate Temples
+        Home
     </h1>
-   </main>
+    <main class="container" id="main">
+
+        
+        <section class="grid cols-2" aria-label="About Me">
+            <article class="card">
+            <div class="card-head">About Me</div>
+            <div class="card-body">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veritatis vero asperiores, corporis repellat nam fugiat. Obcaecati animi libero beatae doloremque. Perspiciatis id, voluptatibus voluptatum quibusdam voluptatem nulla laudantium vero. Accusamus eligendi, aperiam numquam est molestias excepturi iste exercitationem et enim dolorem sequi. Sit esse, inventore exercitationem sequi nemo earum odio eius repellendus soluta aperiam ratione quam animi fugiat dolorum delectus dolorem doloremque minima, reiciendis dolor. Vero odio dignissimos, molestiae est tempora temporibus quae cupiditate esse, repellat aliquam aut nisi enim beatae quaerat similique, accusantium ipsa modi corporis? Asperiores est vitae molestias.
+                </p>
+            </div>
+            </article>
+
+            <aside class="card" aria-labelledby="student-photo-title">
+            <div class="card-head" id="student-photo-title">Student Photo</div>
+            <div class="card-body">
+                <section>
+                <img src="images/me.jpg" alt="Student Photo" class="photo-box">
+                </section>
+            </div>
+            </aside>
+        </section>
+
+        
+        <section aria-labelledby="courses-title" style="margin-top:1.5rem">
+            <div class="section-title" id="courses-title">Web Certificate Courses</div>
+
+            <div class="filters" role="toolbar" aria-label="Course filters">
+            <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter" data-filter="cse" aria-pressed="false">CSE</button>
+            <button type="button" class="filter" data-filter="wdd" aria-pressed="false">WDD</button>
+            </div>
+
+            <div class="courses" id="courseGrid">
+            <div class="course" data-category="wdd" data-credits="3">
+                WDD 130 <small>Web Fundamentals • 3 cr</small>
+            </div>
+            <div class="course" data-category="wdd" data-credits="3">
+                WDD 131 <small>Dynamic Web • 3 cr</small>
+            </div>
+            <div class="course" data-category="wdd" data-credits="3">
+                WDD 231 <small>Frontend Dev • 3 cr</small>
+            </div>
+            </div>
+
+            <p class="note" id="creditNote">
+            The total credits for course listed above is <strong>9</strong>.
+            </p>
+        </section>
+
+            
+    </main>
    <footer>
         <div class="social">
             <a href="https://www.facebook.com/mpsand/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
@@ -41,6 +93,7 @@
         </div>
         <p>&copy; <span id="curYr"></span></p>
             <script src="scripts/getdates.js" defer></script>
+            <script src="scripts/navigation.js"></script>
         <p></p>
         <p>This document was  last modified: <span id="demo"></span>
    </footer>

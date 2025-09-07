@@ -6,13 +6,31 @@
    <title>Document</title>
    <meta name="description" content="description of page using keyboards">
    <meta name="author" content="Martin A. Pasco">
-   <link rel="stylesheet" href="styles/filename">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-   <header><h1>PageTitle -  Heading</h1></header>
-   <nav></nav>
-   <main></main>
+   <header>
+        <img src="images/home.svg" alt="site logo" width="512" height="512">
+        <span>Martin's Site </span>
+        <button id="ham-btn" class="hamburger"></button>
+   </header>
+   <nav id="nav-bar" class="navigation">
+        <ul>
+            <li ><a href="#">News & Events</a></li>
+            <li class="current"><a href="#">Dedicate Temples</a></li>
+            <li ><a href="#">Announced Temples</a></li>
+            
+        </ul>
+    
+   </nav>
+   <main>
+    <h1>
+        Dedicate Temples
+    </h1>
+   </main>
    <footer>Martin A. Pasco | BYU-Idaho | wdd231 - 2025</footer>
-   <script src="scrips"></script>
+   <script src="scripts/navigation.js"></script>
 </body>
 </html> 
